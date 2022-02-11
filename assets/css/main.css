@@ -51,6 +51,7 @@ table {
 	border-spacing: 0;
 }
 
+
 body {
 	-webkit-text-size-adjust: none;
 }
@@ -201,7 +202,6 @@ input, select, textarea {
 	}
 
 	code {
-		
 		background: rgba(255, 255, 255, 0.075);
 		border-radius: 4px;
 		font-family: "Courier New", monospace;
@@ -2271,7 +2271,7 @@ input, select, textarea {
 
 		select option {
 			color: #ffffff;
-			background: #261c22;
+			background: #1c1d26;
 		}
 
 		select:focus::-ms-value {
@@ -3203,6 +3203,8 @@ input, select, textarea {
 
 		.wrapper.style2 {
 			background: #e44c65;
+			background-attachment: fixed;
+			background-image: url("../../images/pic04.jpg");
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3220,7 +3222,7 @@ input, select, textarea {
 			.wrapper.style2 input[type="button"]:active,
 			.wrapper.style2 .button:hover,
 			.wrapper.style2 .button:active {
-				background-color: rgba(77, 22, 60, 0.075) !important;
+				background-color: rgba(255, 255, 255, 0.075) !important;
 				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
 				color: #ffffff !important;
 			}
@@ -3247,7 +3249,7 @@ input, select, textarea {
 				.wrapper.style2 input[type="button"].primary:active,
 				.wrapper.style2 .button.primary:hover,
 				.wrapper.style2 .button.primary:active {
-					background-color: rgba(214, 0, 0, 0.075) !important;
+					background-color: rgba(255, 255, 255, 0.075) !important;
 					box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
 					color: #ffffff !important;
 				}
@@ -3375,8 +3377,8 @@ input, select, textarea {
 	}
 
 	#header {
-		background: #365668;
-		box-shadow: 0 0 0.25em 0 #ffffff;
+		background: rgba(39, 40, 51, 0.965);
+		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
 		height: 3.5em;
 		left: 0;
@@ -3452,7 +3454,7 @@ input, select, textarea {
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #33272f;
+		background-color: #272833;
 		background-image: url("../../images/banner.jpg");
 		background-position: center center;
 		background-size: cover;
