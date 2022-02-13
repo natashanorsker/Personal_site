@@ -72,8 +72,8 @@
         try {
             result = !!(canvas.getContext && (ctx = canvas.getContext('2d')));
 
-            self.lines[0] = new Line(-400, canvas.offsetHeight - 100, '#1c244c', self.options, mouse);
-            self.lines[1] = new Line(-400, canvas.offsetHeight - 100, '#43c2f0', self.options, mouse);
+            self.lines[0] = new Line(-400, canvas.offsetHeight + 300, '#1c244c', self.options, mouse);
+            self.lines[1] = new Line(-400, canvas.offsetHeight + 300, '#43c2f0', self.options, mouse);
 
         } catch (e) {
             return false;

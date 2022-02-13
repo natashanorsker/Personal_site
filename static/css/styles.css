@@ -11,6 +11,8 @@ html, body {
   width: 100%;
   font-family: 'Rubik', sans-serif;
   color: #222;
+  margin: 0;
+  padding: 0;
 }
 
 html { 
@@ -21,8 +23,11 @@ html {
   background-size: cover;
 }
 
-/*HOME PAGE*/
+/*STICKY SECTIONs*/
 
+
+
+/*HOME PAGE*/
 .hero-header .overlay {
   position:absolute;
   width: 100%;
@@ -69,14 +74,13 @@ html {
   text-align: center;
 }
 
-
 .panel-background .overlay {
-	background:url("../resources/overlays/pattern.png") repeat rgba(102, 127, 240, 0.3);
+  position: sticky;
+	background:url("../resources/overlays/pattern.png") repeat rgba(10, 17, 49, 0.3);
 	position: absolute;
 	left: 0;
 	top: 0;
 	right: 0;
-	z-index: 100;
 	width: 100%;
 	height: 100%;
 }
@@ -87,13 +91,13 @@ html {
 	left: 0;
 	top: 0;
 	right: 0;
-	z-index: 100;
 	width: 100%;
 	height: 100%;
 }
 
 /*All of the panels that have a background uses this*/
 .panel-background {
+  position: sticky;
   background: #ffff;
   background-attachment: scroll;
   background-size: cover;
@@ -101,47 +105,169 @@ html {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
-  min-height: 400px;
-  margin-top: 12px;
-  margin-bottom: 12px;
   border-radius: 0; /*slim it down*/
-  height: 100%;
   display: block;
-
   font-family: 'Rubik', sans-serif;
   color: #ffff;
 }
 
+/*specific page content adjustments*/
 #home {
   background-image: url('../resources/backgrounds/header_img_sky.jpg');
 }
-
-#skills {
-  background-image: url('../resources/backgrounds/neural_patterns2.gif');
-  margin-bottom: 0px;
+#timeline{
+  position: sticky;
+  font-family: 'Rubik', sans-serif;
+  color: #222;
 }
-
+#skills {
+  position: sticky;
+  background-image: url('../resources/backgrounds/neural_patterns2.gif');
+  background-attachment: scroll;
+  background-size: cover;
+}
 #projects {
   background-image: url('../resources/backgrounds/neural_patterns3.gif');
   background-attachment: fixed;
-}
+  font-size: 50px;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+	line-height: 70px;
+  font-weight: 20px;
+  z-index: 100;
+  position: relative;
 
+}
 #facial_recognition{
   background-image: url('../resources/backgrounds/neural_patterns4.gif');
   background-attachment: fixed;
   margin-top: 0px;
 }
-
 #jewellery_recommendation{
   background-image: url('../resources/backgrounds/3dsphere.gif');
   background-attachment: fixed;
-  color: rgb(145, 26, 26);
 }
-
 #courses{
   background-image: url('../resources/backgrounds/dtu_img1.jpg');
   background-attachment: fixed;
 }
+
+
+
+a{
+  text-decoration: none;
+}
+
+.box{
+  width: 300px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.slide-img{
+  height: 450px;
+  position: relative;
+}
+.slide-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+.detail-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+.type{
+  display: flex;
+  flex-direction: column;
+}
+.type a{
+  color: #222222;
+  margin: 5px 0px;;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-right: 8px;
+}
+.type span{
+  color rgba(26,26,26,0.5);
+}
+.price{
+  color: #333333;
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+}
+.slide-img .overlay{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(67,194,240, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buy-btn{
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #252525;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+.buy-btn:hover{
+  color: #FFFFFF;
+  background-color: #f15fa3;
+  transition: all ease 0.3s;
+}
+.slide-img .overlay{
+  visibility: hidden;
+}
+.slide-img:hover .overlay{
+  visibility: visible;
+  animation: fade 0.9s;
+}
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -450,7 +576,7 @@ a:hover {
   padding-top: 2rem;
 }
 .welcome hr {
-  border-top: 2px solid #a11f1f;
+  border-top: 2px solid #43c2f0;
   width: 95%;
   margin-top: .3rem;
   margin-bottom: 1rem;
