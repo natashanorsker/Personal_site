@@ -14,6 +14,169 @@ html, body {
   color: #222;
 }
 
+
+/*--- background image son panels --*/
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+/*HOME PAGE*/
+#home {
+	width: 100%;
+	height: 100%;
+}
+/*header overlay (dot grid)*/
+.hero-header .overlay {
+	background:url("../resources/overlays/pattern_white.png") repeat rgba(255, 255, 255, 0.2);
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+}
+/*header fonts*/
+.header-font1 {
+	font-size: 80px;
+	font-weight: bold;
+	line-height: 70px;
+	text-transform: uppercase;
+	margin: 6px -10px;
+	color: #FF8200;
+  text-align: right;
+}
+.header-font2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: right;
+	font-weight: bold;
+	line-height: 70px;
+	color: #43c2f0;
+}
+.hero-header h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #43c2f0;
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.example img {
+  width: 100%;
+  position: relative;
+}
+
+.example .overlay {
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  font-weight: bold;
+  text-align: right;
+  font-size: 30px;
+}
+
+
+/*header fonts*/
+
+.big {
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: right;
+	font-weight: bold;
+	line-height: 70px;
+	color: #43c2f0;
+}
+
+.big_orange {
+	font-size: 80px;
+	font-weight: bold;
+	line-height: 70px;
+	text-transform: uppercase;
+	margin: 6px -10px;
+	color: #FF8200;
+  text-align: right;
+}
+
+.small {
+    font-size: 15px;
+    font-weight: 200;
+    color: #43c2f0;
+    margin: 30px 0px 0px;
+    text-transform: uppercase;
+	font-weight: 600;
+}
+
+h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #43c2f0;
+}
+
+/*links*/
+/* unvisited link */
+a:link {
+  color: #FF8200;
+}
+/* visited link */
+a:visited {
+  color: #FF8200;
+}
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+
+/*overlays (dots)*/
+.slider-overlay {
+	background:url("../resources/overlays/pattern_white.png") repeat rgba(255, 255, 255, 0.91);
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+}
+
+.skills-overlay {
+	background:rgba(182, 104, 228, 0.3) url("../resources/overlays/pattern.png") repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+}
+
+
+
 /*--- how much padding on navigation bar --*/
 .navbar {
   padding: .8rem;
@@ -47,12 +210,14 @@ html, body {
   font-size: 500%;
   text-transform: uppercase;
   text-shadow: 1px 1px 15px #000;
+  text-align: right;
 }
 
 .carousel-caption h3 {
   font-size: 200%;
   font-weight: 500; /*thickness of font*/
   text-shadow: 1px 1px 10 px #000;
+  text-align: right;
 }
 
 .carousel-caption h5 {
@@ -60,6 +225,14 @@ html, body {
   text-transform: uppercase;
   font-weight: 500; /*thickness of font*/
   text-shadow: 1px 1px 10 px #000;
+  text-align: right;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /*fixed backgrounds*/
@@ -182,7 +355,7 @@ html, body {
 
 .jumbotron {
   background-image: url('../resources/backgrounds/neural_patterns2.gif');
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-position: center center;
   -webkit-transform: translateZ(0);
@@ -218,7 +391,21 @@ html, body {
 .fun {
   width: 100%;
   margin-bottom: 2rem;
+  background-color: #FF8200;
+  border: 2px solid #FF8200;
 }
+
+.fun:hover {
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: #FF8200;
+  border: 2px solid #FF8200;
+}
+
+button:focus {
+  outline: none; 
+}
+
 .gif {
   max-width: 100%;
 }
@@ -229,13 +416,13 @@ html, body {
   padding: 3rem;
 }
 .fa-linkedin {
-  color: #e54d26;
+  color: #FF8200;
 }
 .fa-github {
-  color: #e54d26;
+  color: #FF8200;
 }
 .fa-square-envelope {
-  color: #e54d26;
+  color: #FF8200;
 }
 
 .fa-linkedin,
@@ -252,12 +439,12 @@ html, body {
 }
 
 footer {
-  background-color: #6648b1;
-  color: #6648b1
+  background-color: #8484fc;
+  color: #8484fc
   padding-top: 2rem;
 }
 hr.light {
-  border-top: 1px solid #a11f1f;
+  border-top: 1px solid #8484fc;
   width: 75%;
   margin-top: .8rem;
   margin-bottom: 1rem;
