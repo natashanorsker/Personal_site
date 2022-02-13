@@ -17,8 +17,8 @@
         radius: 600,
     };
     self.targets = [
-        [20, 32, 48, 68, 75, 80, 85, 90, 95],
-        [20, 32, 48, 68, 75, 80, 85, 90, 250]
+        [60, 65, 70, 75, 80, 85, 90, 95, 100],
+        [60, 65, 70, 75, 80, 85, 90, 95, 100]
     ];
     self.dotColors = [
         ['#1c244c', 'rgba(67,194,240, 0.3)', 'rgba(67,194,240, 0.18)'],
@@ -37,7 +37,7 @@
         var y = top;
         tl.find('article:first figure').each(function () {
 
-            self.lines[0].dots.push([$(this).outerWidth() + 20, y + 20]);
+            self.lines[0].dots.push([$(this).outerWidth() + 90, y + 55]);
 
             y += $(this).outerHeight();
         });
@@ -46,7 +46,7 @@
         var y = top;
         tl.find('article:last figure').each(function () {
 
-            self.lines[1].dots.push([canvas.width - $(this).outerWidth() - 20, y + 20]);
+            self.lines[1].dots.push([canvas.width - $(this).outerWidth() +90, y + 55]);
 
             y += $(this).outerHeight();
         });
@@ -59,8 +59,8 @@
         var wasPaused = paused;
         self.toggle(false);
         // Init lines
-        self.lines[0].reset(canvas.offsetWidth / 2 - 15);
-        self.lines[1].reset(canvas.offsetWidth / 2 + 15);
+        self.lines[0].reset(canvas.offsetWidth / 2 - 100);
+        self.lines[1].reset(canvas.offsetWidth / 2 - 60);
 
         InitDots();
 

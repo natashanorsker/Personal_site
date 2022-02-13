@@ -13,6 +13,7 @@ html, body {
   color: #222;
   margin: 0;
   padding: 0;
+  z-index: 100;
 }
 
 html { 
@@ -29,11 +30,9 @@ html {
 
 /*HOME PAGE*/
 .hero-header .overlay {
-  position:absolute;
+  position:relative;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
   background:url("../resources/overlays/pattern_white.png") repeat rgba(255, 255, 255, 0.3);
 }
 /*header fonts*/
@@ -83,16 +82,15 @@ html {
 	right: 0;
 	width: 100%;
 	height: 100%;
+  z-index: 10;
 }
 
 .panel-background .white-overlay {
 	background:url("../resources/overlays/pattern_white.png") repeat rgba(255, 255, 255, 0.6);
 	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
 	width: 100%;
 	height: 100%;
+  z-index: 10;
 }
 
 /*All of the panels that have a background uses this*/
@@ -114,17 +112,22 @@ html {
 /*specific page content adjustments*/
 #home {
   background-image: url('../resources/backgrounds/header_img_sky.jpg');
+  background-size: cover;
 }
 #timeline{
   position: sticky;
   font-family: 'Rubik', sans-serif;
   color: #222;
+  background-color: #FF8200;
 }
+
+
 #skills {
   position: sticky;
   background-image: url('../resources/backgrounds/neural_patterns2.gif');
   background-attachment: scroll;
   background-size: cover;
+  z-index: 100;
 }
 #projects {
   background-image: url('../resources/backgrounds/neural_patterns3.gif');
@@ -144,115 +147,17 @@ html {
   margin-top: 0px;
 }
 #jewellery_recommendation{
-  background-image: url('../resources/backgrounds/3dsphere.gif');
-  background-attachment: fixed;
+  background-image: url('../resources/backgrounds/darkpurple7.jfif');
+  background-attachment: scroll;
 }
 #courses{
   background-image: url('../resources/backgrounds/dtu_img1.jpg');
   background-attachment: fixed;
 }
-
-
-
-a{
-  text-decoration: none;
+#footer{
+  background-image: url('../resources/backgrounds/darkpurple4.jfif');
+  position: sticky;
 }
-
-.box{
-  width: 300px;
-  box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
-  border-radius: 10px;
-  overflow: hidden;
-}
-.slide-img{
-  height: 450px;
-  position: relative;
-}
-.slide-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-.detail-box{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
-}
-.type{
-  display: flex;
-  flex-direction: column;
-}
-.type a{
-  color: #222222;
-  margin: 5px 0px;;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  padding-right: 8px;
-}
-.type span{
-  color rgba(26,26,26,0.5);
-}
-.price{
-  color: #333333;
-  font-weight: 600;
-  font-size: 1.1rem;
-  font-family: sans-serif;
-  letter-spacing: 0.5px;
-}
-.slide-img .overlay{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-  height: 100%;
-  background-color: rgba(67,194,240, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.buy-btn{
-  width: 160px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFFFFF;
-  color: #252525;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-family: sans-serif;
-  border-radius: 20px;
-  box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
-}
-.buy-btn:hover{
-  color: #FFFFFF;
-  background-color: #f15fa3;
-  transition: all ease 0.3s;
-}
-.slide-img .overlay{
-  visibility: hidden;
-}
-.slide-img:hover .overlay{
-  visibility: visible;
-  animation: fade 0.9s;
-}
-@keyframes fade{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-
-
-
 
 
 
@@ -484,6 +389,7 @@ a:hover {
   color: #43c2f0;
   text-transform: uppercase;
   -webkit-text-stroke: 0.25px;
+  width: 20%;
 }
 
 .timeline p{
@@ -495,31 +401,29 @@ a:hover {
   width: 70%;
 }
 
-
 .timeline figure{
-  float: right;
+  float: left;
   width: 100%;
 }
 
 .timeline article{
-  position: relative;
-  width: 38%;
+  position: left;
   overflow: hidden;
   margin-bottom: 100px;
 }
 
 .timeline article:first-of-type{
   float: left;
-  text-align: right;
+  text-align: left;
 }
 
 .timeline article:first-of-type p,
 .timeline article:first-of-type figure{
-  float: right;
+  float: left;
 }
 
 .timeline article:last-of-type{
-  float: right;
+  float: left;
 }
 
 .timeline article:last-of-type h2{
