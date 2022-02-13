@@ -181,8 +181,19 @@ html, body {
 }
 
 .jumbotron {
-  padding: 1rem;
+  background-image: url('../resources/backgrounds/neural_patterns2.gif');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+  min-height: 400px;
+  margin-top: 0px;
+  margin-bottom: 8px;
   border-radius: 0; /*slim it down*/
+  height: 100%;
+  display: block;
 }
 
 /*how much padding for the different classes*/
