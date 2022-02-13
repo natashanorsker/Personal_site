@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700'); /*TD: import another font here*/
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700'); /*TD: import another font here*/ 
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,900'); /*TD: import another font here*/
 
 /*--- Color scheme: blue: #43c2f0 --*/
 /*--- Color scheme: orange: #FF8200 --*/
 /*--- Color scheme: purple: #8484fc --*/
 
-
-
 /*--- font, text color --*/
 html, body {
   height: 100%;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: #222;
 }
 
@@ -22,66 +21,57 @@ html {
   background-size: cover;
 }
 
-
-/*--- background image son panels --*/
-#bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
-}
-#bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
-}
-
 /*HOME PAGE*/
 
-/*header overlay (dot grid)*/
 .hero-header .overlay {
-	background:url("../resources/overlays/pattern_white.png") repeat rgba(255, 255, 255, 0.2);
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	z-index: 100;
-	width: 100%;
-	height: 100%;
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background:url("../resources/overlays/pattern_white.png") repeat rgba(255, 255, 255, 0.3);
 }
 /*header fonts*/
 .header-font1 {
-	font-size: 80px;
-	font-weight: bold;
+	font-size: 85px;
+	font-weight: bolder;
 	line-height: 70px;
 	text-transform: uppercase;
 	margin: 6px -10px;
 	color: #FF8200;
   text-align: right;
+  position: relative;
+  z-index: 100;
 }
 .header-font2 {
   font-size: 60px;
   text-transform: uppercase;
   text-align: right;
-	font-weight: bold;
 	line-height: 70px;
 	color: #43c2f0;
+  z-index: 100;
+  position: relative;
 }
 .hero-header h5 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: #43c2f0;
   text-align: right;
+  text-transform: uppercase;
+  font-weight: 20px;
+  z-index: 100;
+  position: relative;
+}
+
+.header-image {
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+  text-align: center;
 }
 
 
 .panel-background .overlay {
-	background:url("../resources/overlays/pattern.png") repeat rgba(255, 255, 255, 0.3);
+	background:url("../resources/overlays/pattern.png") repeat rgba(102, 127, 240, 0.3);
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -90,6 +80,18 @@ html {
 	width: 100%;
 	height: 100%;
 }
+
+.panel-background .white-overlay {
+	background:url("../resources/overlays/pattern_white.png") repeat rgba(255, 255, 255, 0.6);
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+}
+
 /*All of the panels that have a background uses this*/
 .panel-background {
   background: #ffff;
@@ -100,13 +102,13 @@ html {
   transform: translateZ(0);
   will-change: transform;
   min-height: 400px;
-  margin-top: 0px;
-  margin-bottom: 1px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   border-radius: 0; /*slim it down*/
   height: 100%;
   display: block;
 
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: #ffff;
 }
 
@@ -116,6 +118,7 @@ html {
 
 #skills {
   background-image: url('../resources/backgrounds/neural_patterns2.gif');
+  margin-bottom: 0px;
 }
 
 #projects {
@@ -126,6 +129,7 @@ html {
 #facial_recognition{
   background-image: url('../resources/backgrounds/neural_patterns4.gif');
   background-attachment: fixed;
+  margin-top: 0px;
 }
 
 #jewellery_recommendation{
@@ -198,7 +202,7 @@ html {
 }
 
 h5 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: #43c2f0;
 }
 

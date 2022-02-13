@@ -18,11 +18,11 @@
     };
     self.targets = [
         [20, 32, 48, 68, 75, 80, 85, 90, 95],
-        [20, 32, 48, 68, 75, 80, 85, 90, 95]
+        [20, 32, 48, 68, 75, 80, 85, 90, 250]
     ];
     self.dotColors = [
+        ['#1c244c', 'rgba(67,194,240, 0.3)', 'rgba(67,194,240, 0.18)'],
         ['#43c2f0', 'rgba(67,194,240, 0.3)', 'rgba(67,194,240, 0.18)'],
-        ['#FF8200', 'rgba(255,130,0, 0.3)', 'rgba(255,130,0, 0.18)'],
     ];
 
     self.isPaused = function () {
@@ -72,8 +72,8 @@
         try {
             result = !!(canvas.getContext && (ctx = canvas.getContext('2d')));
 
-            self.lines[0] = new Line(0, canvas.offsetHeight - 100, '#43c2f0', self.options, mouse);
-            self.lines[1] = new Line(0, canvas.offsetHeight - 100, '#FF8200', self.options, mouse);
+            self.lines[0] = new Line(-400, canvas.offsetHeight - 100, '#1c244c', self.options, mouse);
+            self.lines[1] = new Line(-400, canvas.offsetHeight - 100, '#43c2f0', self.options, mouse);
 
         } catch (e) {
             return false;

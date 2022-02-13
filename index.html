@@ -10,6 +10,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<script src="https://kit.fontawesome.com/a8b3e1b598.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
 	<link href="static/css/styles.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
 </head>
@@ -51,11 +52,12 @@
 </nav>
 
 
+
 <!--- Header/about me -->
 <section class='hero-header' id="home">
-	<div class="overlay"></div>
-	<div class="container-fluid padding">
+	<div class="container-fluid">
 		<div class="row panel-background" id="home">
+			<div class="white-overlay"></div>
 			<div class="row padding">
 				<div class="col-10">
 					<div class="header-font1">Hi, <span class="header-font2"> I'm Natasha.</span> </div>
@@ -71,8 +73,8 @@
 					<h5>I often go on long long walks while listening to <a href="https://open.spotify.com/playlist/4l1uqahMuHn8cF05eI8Jta?si=a51ba8e1a63e446d">music</a></h5>
 					<h5>Sometimes I read <a href="https://www.goodreads.com/review/list/101168545?shelf=read">books</a> that are not the usual heavy university textbooks.</h5>
 				</div>
-				<div class="col-2">
-					<img src="static/resources/content_imgs/profile1.jpg" class="img-fluid">
+				<div class="header-image">
+					<div style="text-align: center"><img src="static/resources/content_imgs/profile1.jpg" width="200" /></div>
 				</div>
 			</div>
 		</div>
@@ -84,7 +86,7 @@
 	<div class="row panel-background" id="skills">
 		<div class="overlay"></div>
 		<picture>
-			<img src="static/resources/content_imgs/skills_no_bg.gif" width="80%" class="img-fluid">
+			<img src="static/resources/content_imgs/skills_no_bg.gif" width="80%" class="img-fluid" z-score="100">
 		</picture>
 	</div>
 </div>
@@ -92,12 +94,6 @@
 
 <!--- Tidslinje -->
 <section id="timeline">
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 class="display-4">Work and Education</h1>
-		</div>
-		<hr>
-	</div>
 	<div class="timeline">
 		<canvas id="cvs3"></canvas>
 		<h2></h2>
