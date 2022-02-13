@@ -33,7 +33,7 @@ html, body {
 /*--- main title on header --*/
 .carousel-caption {
   position: absolute;
-  top: 50%;
+  top: 35%;
   transform: translateY(-50%);
 }
 
@@ -49,6 +49,106 @@ html, body {
   font-weight: 500; /*thickness of font*/
   text-shadow: 1px 1px 10 px #000;
 }
+
+.carousel-caption h5 {
+  font-size: 100%;
+  text-transform: uppercase;
+  font-weight: 500; /*thickness of font*/
+  text-shadow: 1px 1px 10 px #000;
+}
+
+
+/*timeline*/
+#timeline{
+  padding-top: 5%;
+}
+
+.timeline{
+  height: 100%;
+  position: relative;
+}
+
+.timeline canvas{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;  
+}
+
+.timeline figcaption{
+  font-weight: 400;
+  font-family: sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.25px;
+}
+
+.timeline h2{
+  font-weight: 400;
+  font-size: 30px;
+  padding-bottom: 100px;
+  color: #b2cde9;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.timeline h6 {
+  color: blue;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.timeline p{
+  font-weight: 400;
+  font-family: sans-serif;
+  padding: 3px 0 20px 0;
+  color: #575757;
+  text-align: justify;
+  width: 70%;
+}
+
+
+.timeline figure{
+  float: right;
+  width: 100%;
+}
+
+.timeline article{
+  position: relative;
+  width: 38%;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.timeline article:first-of-type{
+  float: left;
+  text-align: right;
+}
+
+.timeline article:first-of-type p,
+.timeline article:first-of-type figure{
+  float: right;
+}
+
+.timeline article:last-of-type{
+  float: right;
+}
+
+.timeline article:last-of-type h2{
+  color: #c6e0aa;
+}
+
+.timeline article:last-of-type h6,
+.timeline article:last-of-type a{
+  color: #40aa00;
+}
+
+.timeline article:last-of-type a:hover{
+  color: #40aa00;
+}
+
 
 /*button fill and color*/
 .btn-primary {
@@ -241,7 +341,7 @@ figure {
 }
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 
