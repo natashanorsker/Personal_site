@@ -21,8 +21,8 @@
         [29, 33, 38]
     ];
     self.dotColors = [
-        ['#13669b', 'rgba(19, 102, 155, 0.3)', 'rgba(19, 102, 155, 0.08)'],
-        ['#7dd317', 'rgba(113, 222, 15, 0.3)', 'rgba(91, 164, 22, 0.12)'],
+        ['#13669b', 'rgba(5,12,28, 0.3)', 'rgba(5,12,28, 0.08)'],
+        ['#FF8200', 'rgba(255,130,0, 0.3)', 'rgba(255,130,0,0.08)'],
     ];
 
     self.isPaused = function () {
@@ -72,8 +72,8 @@
         try {
             result = !!(canvas.getContext && (ctx = canvas.getContext('2d')));
 
-            self.lines[0] = new Line(0, canvas.offsetHeight - 100, '#4789a3', self.options, mouse);
-            self.lines[1] = new Line(0, canvas.offsetHeight - 100, '#a0d59c', self.options, mouse);
+            self.lines[0] = new Line(-200, canvas.offsetHeight + 100, '#050c1c', self.options, mouse);
+            self.lines[1] = new Line(-200, canvas.offsetHeight + 100, '#FF8200', self.options, mouse);
 
         } catch (e) {
             return false;
