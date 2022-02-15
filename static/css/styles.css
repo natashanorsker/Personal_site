@@ -151,8 +151,9 @@ html {
   background-attachment: scroll;
 }
 #courses{
-  background-image: url('../resources/backgrounds/dtu_img1.jpg');
+  background-image: url('../resources/backgrounds/header_img_sky.jpg');
   background-attachment: fixed;
+  color: #43c2f0;
 }
 #footer{
   background-image: url('../resources/backgrounds/darkpurple4.jfif');
@@ -389,7 +390,7 @@ a:hover {
   color: #43c2f0;
   text-transform: uppercase;
   -webkit-text-stroke: 0.25px;
-  width: 20%;
+  width: 36%;
 }
 
 .timeline p{
@@ -398,7 +399,7 @@ a:hover {
   padding: 3px 0 20px 0;
   color: #575757;
   text-align: justify;
-  width: 70%;
+  width: 36%;
 }
 
 .timeline figure{
