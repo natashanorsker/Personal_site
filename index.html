@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Natasha Norsker</title>
-	<link rel="stylesheet" type="text/css" media="screen" href="skills.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="static/css/skills.css" />
 	<script src="https://d3js.org/d3.v5.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,402 +19,385 @@
 	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
 	<script type="text/javascript" src="static/js/app.js"></script>
 </head>
+
 <body>
 
 
 
-<!-- Navigation -->
-<!-- this is the navigation bar for... - md because that stands for mobile device-->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-		data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Me</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#skills">Skills</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#timeline">Credentials</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#projects">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#courses">Courses</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#connect">Connect</a>
-				</li>
-			</ul>
+	<!-- Navigation -->
+	<!-- this is the navigation bar for... - md because that stands for mobile device-->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Me</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#skills">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#timeline">Credentials</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#courses">Courses</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#connect">Connect</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-    </div>
-</nav>
+	</nav>
 
 
 
-<!--- Header/about me -->
-<section class='hero-header' id="home">
-	<div class="container-fluid">
-		<div class="row panel-background" id="home">
-			<div class="white-overlay"></div>
-			<div class="row padding">
-				<div class="col-10">
-					<div class="header-font1">Hi, <span class="header-font2"> I'm Natasha.</span> </div>
-					<h5>I WAS ALMOST BORN IN AN ELEVATOR</h5>
-					<h5>I grew up around Næstved.</h5>
-					<h5>I moved to Copenhagen.</h5>
-					<h5>I am studying my <a href="https://www.dtu.dk/english/education/bachelor-beng-and-bsc-/bsc/programmes-in-danish/artificial-intelligence-and-data" target="_blank">bachelors</a> in Artificial Intelligence and Data.</h5>
-					<h5>I have been a tutor and very involved in the study start at DTU.</h5>
-					<h5>I am not a tutor anymore, but I made some of my very best friends through it.</h5>
-					<h5>I now work in a <a href="https://conflux.dk/consulting/" target="_blank">student driven non-profit organization.</a></h5>
-					<h5>I also LOVE my job as a <a href="https://www.linkedin.com/company/ecapacity/posts/?feedView=all" target="_blank"> consultant</a> of data analytics.</h5>
-					<h5>I <a href="https://www.deviantart.com/greynightt/gallery" target="_blank">draw</a> and feel most like me when I am being creative.</h5>
-					<h5>I often go on long long walks while listening to <a href="https://open.spotify.com/playlist/4l1uqahMuHn8cF05eI8Jta?si=a51ba8e1a63e446d" target="_blank">music</a></h5>
-					<h5>Sometimes I read <a href="https://www.goodreads.com/review/list/101168545?shelf=read" target="_blank">books</a> that are not the usual heavy university textbooks.</h5>
+	<!--- Header/about me -->
+	<section class='hero-header' id="home">
+		<div class="container-fluid">
+			<div class="row panel-background" id="home">
+				<div class="white-overlay"></div>
+				<div class="row text-center">
+					<div class="col-8">
+						<div class="centered">
+							<div class="header-font1">Hi, <span class="header-font2"> I'm Natasha.</span> </div>
+							<h5>I WAS ALMOST BORN IN AN ELEVATOR</h5>
+							<h5>I grew up around Næstved.</h5>
+							<h5>I moved to Copenhagen.</h5>
+							<h5>I am studying my <a
+									href="https://www.dtu.dk/english/education/bachelor-beng-and-bsc-/bsc/programmes-in-danish/artificial-intelligence-and-data"
+									target="_blank">bachelors</a> in Artificial Intelligence and Data.</h5>
+							<h5>I have been a tutor and very involved in the study start at DTU.</h5>
+							<h5>I am not a tutor anymore, but I made some of my very best friends through it.</h5>
+							<h5>I now work in a <a href="https://conflux.dk/consulting/" target="_blank">student driven
+									non-profit organization.</a></h5>
+							<h5>I also LOVE my job as a <a
+									href="https://www.linkedin.com/company/ecapacity/posts/?feedView=all"
+									target="_blank">
+									consultant</a> of data analytics.</h5>
+							<h5>I <a href="https://www.deviantart.com/greynightt/gallery" target="_blank">draw</a> and
+								feel most like me when I am being creative.</h5>
+							<h5>I often go on long long walks while listening to <a
+									href="https://open.spotify.com/playlist/4l1uqahMuHn8cF05eI8Jta?si=a51ba8e1a63e446d"
+									target="_blank">music</a></h5>
+							<h5>Sometimes I read <a href="https://www.goodreads.com/review/list/101168545?shelf=read"
+									target="_blank">books</a> that are not the usual heavy university textbooks.</h5>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="header-image">
+							<div class="centered"><img src="static/resources/content_imgs/profile1.jpg" width="200"
+									z-score="100" /></div>
+						</div>
+					</div>
 				</div>
-				<div class="header-image">
-					<div style="text-align: center"><img src="static/resources/content_imgs/profile1.jpg" width="200" z-score="100" /></div>
+			</div>
+	</section>
+
+
+	<!--- Skills -->
+	<div class="container-fluid">
+		<div class="section">
+			<div class="row panel-background" id="skills">
+				<div class="overlay"></div>
+				<div class="row text-center">
+					<div class="col-sm-12">
+						<br>
+						<br>
+						<br>
+						<br>
+						<img src="static/resources/content_imgs/skills_no_bg.gif" width="80%" z-score="100">
+						<br>
+						<br>
+						<br>
+						<br>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
 
 
-<!--- Skills -->
-<div class="container-fluid">
-	<div class="section">
-		<div class="row panel-background" id="skills">
+	<section id="timeline">
+		<div class="timeline">
+			<canvas id="cvs3"></canvas>
+			<article>
+				<h2>Education</h2>
+				<figure>
+					<figcaption>Web Design</figcaption>
+					<h6>using Html CSS JS</h6>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et ipsum pulvinar, blandit neque
+						in, ornare libero. Ut ut libero in nibh convallis sollicitudin. Maecenas ante erat, lacinia
+						commodo pretium vel, ultricies eget nibh. Duis et felis lectus. Donec orci libero, auctor eget
+						sodales at, euismod venenatis nibh.
+					</p>
+				</figure>
+				<figure>
+					<figcaption>Web Development</figcaption>
+					<h6>With modern technologies</h6>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et ipsum pulvinar, blandit neque
+						in, ornare libero.
+					</p>
+				</figure>
+				<figure>
+					<figcaption>Search Engine Op.</figcaption>
+					<h6>With Free & Paid Plugin</h6>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et ipsum pulvinar, blandit neque
+						in, ornare libero.
+					</p>
+				</figure>
+				<figure>
+					<figcaption>Graphics Design</figcaption>
+					<h6>using ps and all</h6>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et ipsum pulvinar, blandit neque
+						in, ornare libero.
+					</p>
+				</figure>
+			</article>
+
+			<article>
+				<h2>Work</h2>
+				<figure>
+					<figcaption>Graphic & WEB</figcaption>
+					<h6>Learn Today</h6>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et ipsum pulvinar, blandit neque
+						in, ornare libero.
+				</figure>
+				<figure>
+					<figcaption>Mobile Friendly</figcaption>
+					<h6>with touch screen</h6>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et ipsum pulvinar, blandit neque
+						in, ornare libero.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et ipsum pulvinar, blandit neque
+						in, ornare libero.
+					</p>
+				</figure>
+				<figure>
+					<figcaption>Retina Ready Display</figcaption>
+					<h6>Supported all devices</h6>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, molestiae, perferendis.
+						Iusto nam libero doloribus veritatis magnam sequi error, obcaecati, porro atque quo unde iure
+						voluptate officiis eos nostrum, sint. Corporis ipsam necessitatibus repudiandae, beatae odio
+						perferendis provident consequuntur inventore natus deleniti asperiores animi ducimus assumenda
+						possimus eos, cum sunt.
+					</p>
+				</figure>
+			</article>
+			<br style="clear:both" />
+		</div>
+
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="static/js/time.js"></script>
+
+	<!--- Fun projects start -->
+	<div class="container-fluid">
+		<div class="row panel-background" id="projects">
 			<div class="overlay"></div>
+			<div class="row welcome text-center">
+				<div class="col-12">
+					<h4 class="display-4">FUN PROJECTS</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--- Project: What do you mean? -->
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">PROJECT: What do you mean?</h1>
+				<hr>
+				<!--- Horizontal rule -->
+				<p>Let's apply some Natural Language Processing to better understand eachothers points. Drop a text
+					below (it does not get stored) and check out the structure of the text as well as what aspects and
+					sentiments are the most important in the sentences.</p>
+			</div>
+		</div>
+	</div>
+
+	<!--- Project 2: How are you feeling-->
+	<div class="container-fluid">
+		<div class="row panel-background" id="facial_recognition">
+			<div class="overlay"></div>
+			<div class="row welcome text-center">
+				<div class="col-12">
+					<h1 class="display-4">PROJECT: How are you feeling?</h1>
+					<hr>
+					<!--- Horizontal rule -->
+					<p>Ready for some facial expression recognition? During my first semester at my bachelors we made
+						this fun little project. The project examined how well a convolutional neural network could
+						detect different facial expressions compared to humans. Turns out it could perform on par with
+						us!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--- Project 1: trucks -->
+	<div class="container-fluid padding">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">PROJECT: Is this a great truck?</h1>
+				<hr>
+				<!--- Horizontal rule -->
+				<p>Have you ever seen a great truck and thought to yourself; Hmmm... I wonder if Natasha Norsker would
+					like this truck?</p>
+				<p>Wonder no more!</p>
+			</div>
+		</div>
+	</div>
+
+	<!--- Truck Cards -->
+	<div class="container-fluid padding">
+		<div class="row padding">
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="static/resources/trucks/cool1.jpg">
+					<div class="card-body">
+						<h4 class="card-title">BLUE AND ORANGE TRUCK</h4>
+						<h5>GREAT</h5>
+						<p>Well firstly - the color scheme is nice - same one as this website follows. Secondly, it's
+							just cute. Thumbs up.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="static/resources/trucks/bad.jpg">
+					<div class="card-body">
+						<h4>WHITE TRUCK</h4>
+						<h5>NOT GREAT</h5>
+						<p>This truck is just too plain for me.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card">
+					<img class="card-img-top" src="static/resources/trucks/vnice.jpg">
+					<div class="card-body">
+						<h4>RED AND WHITE TRUCK</h4>
+						<h5>GREAT</h5>
+						<p>Nice, clean design. The vibe reminds me of either an old school circus or a small cottage you
+							used to spend your summer holidays in as a kid. It gives off a nice welcoming feeling and
+							have you seen the ..? Very shiny!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--- Project:PROJECT: Hey, can you help me find a piece of jewellery that matches this? -->
+	<div class="container-fluid">
+		<div class="row panel-background" id="jewellery_recommendation">
+			<div class="overlay"></div>
+			<div class="row welcome text-center">
+				<div class="col-12">
+					<h1 class="display-4">PROJECT: Hey, can you help me match this piece of jewellery?</h1>
+					<hr>
+					<!--- Horizontal rule -->
+					<p>Sure I can! In this project we used Content Based Image Retrieval to create a recommendation
+						system that can be used in e-commerce related settings. It could be implemented both as a
+						search-by-image model as well as a recommendation engine. I sometimes still get spooked whenever
+						an ad for jewellery pops up on my social media - it gives my flashbacks to many long nights in
+						front of Visual Studio Code. <br /> <br /> This is how we did it:</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--- Emoji Section -->
+	<button class="fun" data-toggle="collapse" data-target="#emoji"> </button>
+	<div id="emoji" class="collapse">
+		<div class="container-fluid padding">
 			<div class="row text-center">
 				<div class="col-sm-12">
-					<br>
-					<br>
-					<br>
-					<br>
-					<img src="static/resources/content_imgs/skills_no_bg.gif" width="80%" z-score="100">
-					<br>
-					<br>
-					<br>
-					<br>
+					<img class="gif" src="tutorial_imgs/gif/panda.gif">
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-
-
-
-
-
-<!--- Tidslinje -->
-<div class="container-fluid">
-	<div class="timeline">
-		<canvas id="cvs3"></canvas>
-		<article>
-			<h2></h2>
-			<figure>
-				<figcaption>Jan 2022:</figcaption>
-				<h6></h6>
-				<br>
-			</figure>
-
-			<figure>
-				<figcaption>Aug 2020:</figcaption>
-				<h6></h6>
-				<br>
-			</figure>
-
-			<figure>
-				<figcaption>Feb 2020:</figcaption>
-				<h6></h6>
-				<br>
-			</figure>
-
-			<figure>
-				<figcaption>Sep 2019:</figcaption>
-				<h6></h6>
-				<br>
-			</figure>
-
-			<figure>
-				<figcaption>XX 2018:</figcaption>
-				<h6></h6>
-				<br>
-			</figure>
-
-			<figure>
-				<figcaption>XX 2016:</figcaption>
-				<h6></h6>
-				<br>
-			</figure>
-
-			<figure>
-				<figcaption>Sep 2016:</figcaption>
-				<h6></h6>
-				<br>
-			</figure>
-
-			<figure>
-				<figcaption>XX 2015:</figcaption>
-				<h6></h6>
-				<br>
-			</figure>
-
-			<figure>
-				<figcaption>XX 2014:</figcaption>
-				<h6></h6>
-				<br>
-			</figure>
-		</article>
-
-		<article>
-			<h2></h2>
-			<figure>
-				<figcaption>Conflux</figcaption>
-				<h6>Non-profit student organisation</h6>
-				<p>
-					At Conflux we aim to create a relationship between STEM students in Denmark and people from businesses. We do this in two ways - firstly through our mentorship programme that connects a STEM student to a mentor and secondly through our consulting programme that let businesses present work cases the students can solve in teams.
-				</p>
-			</figure>
-
-			<figure>
-				<figcaption>Valtech_</figcaption>
-				<h6>Commercial Strategy & Data Transformation</h6>
-				<p>
-					I was hired as a student consultant in Valtech_ after my second semester at my Bachelors. At Valtech_ I have been lucky enough to get a great mentor and be introduced to commercial thinking as well as a lot of BI and Data Science tasks.
-				</p>
-			</figure>
-
-			<figure>
-				<figcaption>Polyteknisk Forening</figcaption>
-				<h6>Tutoring at DTU</h6>
-				<p>
-					I was a tutor the entire year of 2020 and I loved it - so many cool new people that would become my friends and a lot of fun.
-				</p>
-			</figure>
-
-			<figure>
-				<figcaption>DTU</figcaption>
-				<h6>Bachelor in Artificial Intelligence and Data</h6>
-				<p>
-					I was lucky enough to get admitted into my dream bachelor programme. I have not once regretted studying AI and DTU is the perfect place for it.
-				</p>
-			</figure>
-
-			<figure>
-				<figcaption>SDU</figcaption>
-				<h6>IT camp for women</h6>
-				<p>
-					The IT camp for women was hosted at SDU and introduced us to drag-and-drop programming and different programming competitions.
-				</p>
-			</figure>
-
-			<figure>
-				<figcaption>KU</figcaption>
-				<h6>Project Forskerspirer</h6>
-				<p>
-					.......
-				</p>
-			</figure>
-
-			<figure>
-				<figcaption>Næstved Gymnasium</figcaption>
-				<h6>Tutor</h6>
-				<p>
-					I tutored the new students that started high school in the year of 2016 and introduced them to the school.
-				</p>
-			</figure>
-
-			<figure>
-				<figcaption>KU</figcaption>
-				<h6>Project Forskerspirer</h6>
-				<p>
-					.......
-				</p>
-			</figure>
-		</article>
-
-		<br style="clear:both" />
-	</div>
-</div>
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script src="static/js/time.js"></script>
-
-
-<!--- Fun projects start -->
-<div class="container-fluid">
-	<div class="row panel-background" id="projects">
-		<div class="overlay"></div>
-		<div class="row welcome text-center">
-			<div class="col-12">
-				<h4 class="display-4">FUN PROJECTS</h4>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<!--- Project 1: trucks -->
-<div class="container-fluid padding">
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 class="display-4">PROJECT: Is this a great truck?</h1>
-			<hr> <!--- Horizontal rule -->
-			<p>Have you ever seen a great truck and thought to yourself; Hmmm... I wonder if Natasha Norsker would like this truck?</p> <p>Wonder no more!</p> 
-		</div>
-	</div>
-	</div>
-
-<!--- Truck Cards -->
-<div class="container-fluid padding">
-	<div class="row padding">
-		<div class="col-md-4">
-			<div class="card">
-				<img class="card-img-top" src="static/resources/trucks/cool1.jpg">
-				<div class="card-body">
-					<h4 class="card-title">BLUE AND ORANGE TRUCK</h4>
-					<h5>GREAT</h5>
-                    <p>Well firstly - the color scheme is nice - same one as this website follows. Secondly, it's just cute. Thumbs up.</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-md-4">
-			<div class="card">
-				<img class="card-img-top" src="static/resources/trucks/bad.jpg">
-				<div class="card-body">
-					<h4>WHITE TRUCK</h4>
-                    <h5>NOT GREAT</h5>
-                    <p>This truck is just too plain for me.</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-md-4">
-			<div class="card">
-				<img class="card-img-top" src="static/resources/trucks/vnice.jpg">
-				<div class="card-body">
-					<h4>RED AND WHITE TRUCK</h4>
-					<h5>GREAT</h5>
-					<p>Nice, clean design. The vibe reminds me of either an old school circus or a small cottage you used to spend your summer holidays in as a kid. It gives off a nice welcoming feeling and have you seen the ..? Very shiny!</p>
+	<!-- Courses-->
+	<div class="container-fluid">
+		<div class="row panel-background" id="courses">
+			<div class="overlay"></div>
+			<div class="row welcome text-center">
+				<div class="col-12">
+					<h1 class="display-4">Completed University Courses</h1>
+					<hr>
+					<!--- Horizontal rule -->
+					<p>The visualisation below shows the courses I have already completed at DTU as well as how the
+						courses are dependant on each other. Hovering over a course with your mouse will make the course
+						active. The pink edges are the courses where I applied knowledge from the active course
+						afterwards. The orange edges are the courses I used knowledge from in order to understand the
+						active course. A good example is the introductory programming course - it was one of the first
+						courses I had at DTU, so it does not have any orange edges. However, since I have been using
+						Python in practically every course since then, it has a lot of pink edges.</p>
+					<br>
+					<br>
+					<svg></svg>
+					<script src="static/js/skills.js"></script>
 				</div>
 			</div>
 		</div>
 	</div>
-	</div>
 
 
 
-<!--- Project 2: How are you feeling-->
-<div class="container-fluid">
-	<div class="row panel-background" id="facial_recognition">
-		<div class="overlay"></div>
-		<div class="row welcome text-center">
-			<div class="col-12">
-				<h1 class="display-4">PROJECT: How are you feeling?</h1>
-				<hr> <!--- Horizontal rule -->
-				<p>Ready for some facial expression recognition? During my first semester at my bachelors we made this fun little project. The project examined how well a convolutional neural network could detect different facial expressions compared to humans. Turns out it could perform on par with us!</p> 
+
+	<!--- Three Column Section -->
+	<div class="container-fluid">
+		<div class="row panel-background" id="connect"></div>
+		<div class="white-overlay"></div>
+		<div class="row text-center">
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<a href="https://www.linkedin.com/in/natashanorsker/"><i class="fa-brands fa-linkedin"></i></a>
+				<h3>LinkedIn</h3>
+				<p>Hit me up! Feel free to connect with me on LinkedIn</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4">
+				<a href="https://www.linkedin.com/in/natashanorsker/"><i class="fa-brands fa-github"></i></a>
+				<h3>GitHub</h3>
+				<p>Check out my projects</p>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<a href="https://www.linkedin.com/in/natashanorsker/"><i class="fa-solid fa-square-envelope"></i></a>
+				<h3>Mail</h3>
+				<p>You know what to do</p>
 			</div>
 		</div>
 	</div>
-</div>
+	</div>
 
-<!--- Project: What do you mean? -->
-<div class="container-fluid padding">
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 class="display-4">PROJECT: What do you mean?</h1>
-			<hr> <!--- Horizontal rule -->
-			<p>Let's apply some Natural Language Processing to better understand eachothers points. Drop a text below (it does not get stored) and check out the structure of the text as well as what aspects and sentiments are the most important in the sentences.</p> 
+	<div class="container-fluid">
+		<div class="row panel-background" id="footer">
+			<div class="overlay"></div>
+			<br>
+			<br>
 		</div>
 	</div>
-	</div>
-
-
-<!--- Project:PROJECT: Hey, can you help me find a piece of jewellery that matches this? -->
-<div class="container-fluid">
-	<div class="row panel-background" id="jewellery_recommendation">
-		<div class="overlay"></div>
-		<div class="row welcome text-center">
-			<div class="col-12">
-				<h1 class="display-4">PROJECT: Hey, can you help me match this piece of jewellery?</h1>
-				<hr> <!--- Horizontal rule -->
-				<p>Sure I can! In this project we used Content Based Image Retrieval to create a recommendation system that can be used in e-commerce related settings. It could be implemented both as a search-by-image model as well as a recommendation engine. I sometimes still get spooked whenever an ad for jewellery pops up on my social media - it gives my flashbacks to many long nights in front of Visual Studio Code. <br/> <br/> This is how we did it:</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<!--- Emoji Section -->
-<button class="fun" data-toggle="collapse" data-target="#emoji"> </button>
-<div id="emoji" class="collapse">
-<div class="container-fluid padding">
-<div class="row text-center">
-	<div class="col-sm-12">
-		<img class="gif" src="tutorial_imgs/gif/panda.gif">
-	</div>
-</div>
-</div>
-</div>
-
-<!-- Courses-->
-<div class="container-fluid">
-	<div class="row panel-background" id="courses">
-		<div class="row welcome text-center">
-			<div class="col-12">
-				<h1 class="display-4">Completed Courses at DTU</h1>
-				<h1>University Courses I have completed</h1>
-				<svg></svg>
-				<p>Green links are for courses I used knowledge from in order to learn the active course. Red is the courses where I applied my knowledge from the active course.</p>
-				<script src="skills.js"></script>
-			</div>
-		</div>
-	</div>
-</div>
-
-	
-
-
-<!--- Three Column Section -->
-<div class="container-fluid padding" id="connect">
-<div class="row text-center padding">
-	<div class="col-xs-12 col-sm-6 col-md-4">
-		<i class="fa-brands fa-linkedin"></i>
-		<h3>LinkedIn</h3>
-		<p>Hit me up! Feel free to connect with me on LinkedIn</p>
-	</div>
-	<div class="col-xs-12 col-sm-6 col-md-4">
-		<i class="fa-brands fa-github"></i>
-		<h3>GitHub</h3>
-		<p>Check out my projects</p>
-	</div>
-	<div class="col-sm-12 col-md-4">
-		<i class="fa-solid fa-square-envelope"></i>
-		<h3>Mail</h3>
-		<p>You know what to do</p>
-	</div>
-
-<div class="container-fluid">
-	<div class="row panel-background" id="footer">
-		<br>
-		<br>
-	</div>
-</div>
 
 
 </body>
+
 </html>
-
-
-
-
-

@@ -17,12 +17,12 @@
         radius: 600,
     };
     self.targets = [
-        [60, 65, 70, 75, 80, 85, 90, 95, 100],
-        [60, 65, 70, 75, 80, 85, 90, 95, 100]
+        [29, 32, 48, 68],
+        [29, 33, 38]
     ];
     self.dotColors = [
-        ['#1c244c', 'rgba(67,194,240, 0.3)', 'rgba(67,194,240, 0.18)'],
-        ['#43c2f0', 'rgba(67,194,240, 0.3)', 'rgba(67,194,240, 0.18)'],
+        ['#13669b', 'rgba(19, 102, 155, 0.3)', 'rgba(19, 102, 155, 0.08)'],
+        ['#7dd317', 'rgba(113, 222, 15, 0.3)', 'rgba(91, 164, 22, 0.12)'],
     ];
 
     self.isPaused = function () {
@@ -37,7 +37,7 @@
         var y = top;
         tl.find('article:first figure').each(function () {
 
-            self.lines[0].dots.push([$(this).outerWidth() + 90, y + 55]);
+            self.lines[0].dots.push([$(this).outerWidth() + 20, y + 20]);
 
             y += $(this).outerHeight();
         });
@@ -46,7 +46,7 @@
         var y = top;
         tl.find('article:last figure').each(function () {
 
-            self.lines[1].dots.push([canvas.width - $(this).outerWidth() +90, y + 55]);
+            self.lines[1].dots.push([canvas.width - $(this).outerWidth() - 20, y + 20]);
 
             y += $(this).outerHeight();
         });
@@ -59,8 +59,8 @@
         var wasPaused = paused;
         self.toggle(false);
         // Init lines
-        self.lines[0].reset(canvas.offsetWidth / 2 - 100);
-        self.lines[1].reset(canvas.offsetWidth / 2 - 60);
+        self.lines[0].reset(canvas.offsetWidth / 2 - 15);
+        self.lines[1].reset(canvas.offsetWidth / 2 + 15);
 
         InitDots();
 
@@ -72,8 +72,8 @@
         try {
             result = !!(canvas.getContext && (ctx = canvas.getContext('2d')));
 
-            self.lines[0] = new Line(-400, canvas.offsetHeight + 300, '#1c244c', self.options, mouse);
-            self.lines[1] = new Line(-400, canvas.offsetHeight + 300, '#43c2f0', self.options, mouse);
+            self.lines[0] = new Line(0, canvas.offsetHeight - 100, '#4789a3', self.options, mouse);
+            self.lines[1] = new Line(0, canvas.offsetHeight - 100, '#a0d59c', self.options, mouse);
 
         } catch (e) {
             return false;

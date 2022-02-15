@@ -7,13 +7,14 @@
 
 /*--- font, text color --*/
 html, body {
-  height: 100%;
-  width: 100%;
+  margin:0px;
+  height:100%;
   font-family: 'Rubik', sans-serif;
   color: #222;
   margin: 0;
   padding: 0;
   z-index: 100;
+  position: relative;
 }
 
 html { 
@@ -22,19 +23,18 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: 100;
+  position: relative;
 }
 
-/*STICKY SECTIONs*/
-
-
-
-/*HOME PAGE*/
-.hero-header .overlay {
-  position:relative;
-  width: 100%;
-  height: 100%;
-  background:url("../resources/overlays/pattern_white.png") repeat rgba(255, 255, 255, 0.3);
+.centered {
+  position: relative; /* or absolute */
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
+
 /*header fonts*/
 .header-font1 {
 	font-size: 85px;
@@ -71,171 +71,7 @@ html {
   display: inline-block;
   z-index: 100;
   text-align: center;
-}
-
-.panel-background .overlay {
-  position: sticky;
-	background:url("../resources/overlays/pattern.png") repeat rgba(10, 17, 49, 0.3);
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-  z-index: 10;
-}
-
-.panel-background .white-overlay {
-	background:url("../resources/overlays/pattern_white.png") repeat rgba(255, 255, 255, 0.6);
-	position: absolute;
-	width: 100%;
-	height: 100%;
-  z-index: 10;
-}
-
-/*All of the panels that have a background uses this*/
-.panel-background {
-  position: sticky;
-  background: #ffff;
-  background-attachment: scroll;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  will-change: transform;
-  border-radius: 0; /*slim it down*/
-  display: block;
-  font-family: 'Rubik', sans-serif;
-  color: #ffff;
-}
-
-/*specific page content adjustments*/
-#home {
-  background-image: url('../resources/backgrounds/header_img_sky.jpg');
-  background-size: cover;
-}
-#timeline{
-  position: sticky;
-  font-family: 'Rubik', sans-serif;
-  color: #222;
-  background-color: #FF8200;
-}
-
-
-#skills {
-  position: sticky;
-  background-image: url('../resources/backgrounds/neural_patterns2.gif');
-  background-attachment: scroll;
-  background-size: cover;
-  z-index: 100;
-}
-#projects {
-  background-image: url('../resources/backgrounds/neural_patterns3.gif');
-  background-attachment: fixed;
-  font-size: 50px;
-  font-family: 'Rubik', sans-serif;
-  text-transform: uppercase;
-	line-height: 70px;
-  font-weight: 20px;
-  z-index: 100;
-  position: relative;
-
-}
-#facial_recognition{
-  background-image: url('../resources/backgrounds/neural_patterns4.gif');
-  background-attachment: fixed;
-  margin-top: 0px;
-}
-#jewellery_recommendation{
-  background-image: url('../resources/backgrounds/darkpurple7.jfif');
-  background-attachment: scroll;
-}
-#courses{
-  background-image: url('../resources/backgrounds/header_img_sky.jpg');
-  background-attachment: fixed;
-  color: #43c2f0;
-}
-#footer{
-  background-image: url('../resources/backgrounds/darkpurple4.jfif');
-  position: sticky;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.example img {
-  width: 100%;
-  position: relative;
-}
-
-.example .overlay {
-  position: absolute;
-  top: 80px;
-  right: 15px;
-  font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-}
-
-
-/*header fonts*/
-
-.big {
-  font-size: 60px;
-  text-transform: uppercase;
-  text-align: right;
-	font-weight: bold;
-	line-height: 70px;
-	color: #43c2f0;
-}
-
-.big_orange {
-	font-size: 80px;
-	font-weight: bold;
-	line-height: 70px;
-	text-transform: uppercase;
-	margin: 6px -10px;
-	color: #FF8200;
-  text-align: right;
-}
-
-.small {
-    font-size: 15px;
-    font-weight: 200;
-    color: #43c2f0;
-    margin: 30px 0px 0px;
-    text-transform: uppercase;
-	font-weight: 600;
-}
-
-h5 {
-  font-family: 'Rubik', sans-serif;
-  color: #43c2f0;
+  height: 100vh;
 }
 
 /*links*/
@@ -252,29 +88,188 @@ a:hover {
   color: hotpink;
 }
 
-
-/*overlays (dots)*/
-.slider-overlay {
-	background:url("../resources/overlays/pattern_white.png") repeat rgba(255, 255, 255, 0.91);
+.panel-background .overlay {
+  position: sticky;
+	background:url("../resources/overlays/pattern.png") repeat rgba(10, 17, 49, 0.3);
 	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	z-index: 100;
-	width: 100%;
+  width: 100%;
 	height: 100%;
+  margin: 0%;
+  z-index: 10;
 }
 
-.skills-overlay {
-	background:rgba(182, 104, 228, 0.3) url("../resources/overlays/pattern.png") repeat;
+.panel-background .white-overlay {
+	background:url("../resources/overlays/pattern_white.png") repeat rgba(255, 255, 255, 0.6);
 	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	z-index: 100;
 	width: 100%;
 	height: 100%;
+  margin: 0%;
+  z-index: 10;
 }
+
+
+/*All of the panels that have a background uses this*/
+.panel-background {
+  position: sticky;
+  background: #ffff;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  border-radius: 0; /*slim it down*/
+  display: block;
+  font-family: 'Rubik', sans-serif;
+  color: #ffff;
+}
+
+/*specific page content adjustments*/
+#home {
+  background-image: url('../resources/backgrounds/header_img_sky.jpg');
+  background-size: cover;
+}
+
+#skills {
+  position: sticky;
+  background-image: url('../resources/backgrounds/neural_patterns2.gif');
+  background-attachment: scroll;
+  background-size: cover;
+}
+#projects {
+  background-image: url('../resources/backgrounds/neural_patterns3.gif');
+  background-attachment: fixed;
+  font-size: 50px;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+	line-height: 70px;
+  font-weight: 20px;
+  z-index: 100;
+  position: relative;
+}
+#facial_recognition{
+  background-image: url('../resources/backgrounds/neural_patterns4.gif');
+  background-attachment: fixed;
+  margin-top: 0px;
+}
+#jewellery_recommendation{
+  background-image: url('../resources/backgrounds/jewellery2.png');
+  background-attachment: scroll;
+}
+#courses{
+  background-image: url('../resources/backgrounds/darkpurple9.png');
+  background-attachment: fixed;
+  color: #43c2f0;
+}
+#footer{
+  background-image: url('../resources/backgrounds/darkpurple4.jfif');
+  position: sticky;
+  margin-bottom: 0%;
+  vertical-align:bottom;
+}
+
+
+
+/*TIMELINE STUFF ---------------------------------*/
+#timeline {
+  padding-top: 5%;
+}
+.timeline {
+  height: 100%;
+  position: relative;
+}
+.timeline canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.timeline figcaption {
+  font-weight: 400;
+    font-family: 'Poppins',sans-serif;
+    font-size: 24px;
+  text-transform: uppercase;
+  -webkit-text-stroke: .25px;
+}
+.timeline h2 {
+  font-weight: 400;
+    font-size: 30px;
+  padding-bottom: 100px;
+  color: #b2cde9;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+.timeline h6 {
+  color: #0090F5;
+   
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+.timeline p,
+.timeline ol {
+  font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+  padding: 3px 0 20px 0;
+  color: #575757;
+  text-align: justify;
+  width: 70%;
+}
+.timeline ol {
+  list-style: disc;
+  margin-top: -20px;
+  padding-left: 40px;
+}
+.timeline figure {
+  float: right;
+  width: 100%;
+}
+.timeline article {
+  position: relative;
+  width: 38%;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+.timeline article:first-of-type {
+  float: left;
+  text-align: right;
+}
+.timeline article:first-of-type p,
+.timeline article:first-of-type figure {
+  float: right;
+}
+.timeline article:last-of-type {
+  float: right;
+}
+.timeline article:last-of-type h2 {
+  color: #c6e0aa;
+}
+.timeline article:last-of-type h6,
+.timeline article:last-of-type a {
+  color: #40aa00;
+}
+.timeline article:last-of-type a:hover {
+  color: #95D40D;
+}
+/*------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -299,36 +294,6 @@ a:hover {
   height: 100%;
 }
 
-/*--- main title on header --*/
-.carousel-caption {
-  position: absolute;
-  top: 35%;
-  transform: translateY(-50%);
-}
-
-/*--- text on header --*/
-.carousel-caption h1 {
-  font-size: 500%;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 15px #000;
-  text-align: right;
-}
-
-.carousel-caption h3 {
-  font-size: 200%;
-  font-weight: 500; /*thickness of font*/
-  text-shadow: 1px 1px 10 px #000;
-  text-align: right;
-}
-
-.carousel-caption h5 {
-  font-size: 100%;
-  text-transform: uppercase;
-  font-weight: 500; /*thickness of font*/
-  text-shadow: 1px 1px 10 px #000;
-  text-align: right;
-}
-
 .center {
   display: block;
   margin-left: auto;
@@ -339,139 +304,6 @@ a:hover {
 /*fixed backgrounds*/
 #fixed{
   width: 100%;
-}
-
-/*timeline*/
-#timeline{
-  padding-top: 5%;
-}
-
-.timeline{
-  height: 100%;
-  position: relative;
-}
-
-.timeline canvas{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;  
-}
-
-.timeline figcaption{
-  font-weight: 100;
-  font-family: sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-  -webkit-text-stroke: 0.25px;
-}
-
-.timeline h2{
-  font-weight: 400;
-  font-size: 30px;
-  padding-bottom: 100px;
-  color: #b2cde9;
-  font-family: sans-serif;
-  text-transform: uppercase;
-}
-
-.timeline h6 {
-  color: #FF8200;
-  font-family: sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-}
-
-.timeline h5{
-  font-weight: 100;
-  font-family: sans-serif;
-  font-size: 24px;
-  color: #43c2f0;
-  text-transform: uppercase;
-  -webkit-text-stroke: 0.25px;
-  width: 36%;
-}
-
-.timeline p{
-  font-weight: 400;
-  font-family: sans-serif;
-  padding: 3px 0 20px 0;
-  color: #575757;
-  text-align: justify;
-  width: 36%;
-}
-
-.timeline figure{
-  float: left;
-  width: 100%;
-}
-
-.timeline article{
-  position: left;
-  overflow: hidden;
-  margin-bottom: 100px;
-}
-
-.timeline article:first-of-type{
-  float: left;
-  text-align: left;
-}
-
-.timeline article:first-of-type p,
-.timeline article:first-of-type figure{
-  float: left;
-}
-
-.timeline article:last-of-type{
-  float: left;
-}
-
-.timeline article:last-of-type h2{
-  color: #FF8200;
-}
-
-.timeline article:last-of-type h6,
-.timeline article:last-of-type a{
-  color: #FF8200;
-}
-
-.timeline article:last-of-type a:hover{
-  color: #FF8200;
-}
-
-
-/*button fill and color*/
-.btn-primary {
-  background-color: #FF8200;
-  border: 1px solid #FF8200;
-}
-
-/*button fill and color when hovered over*/
-.btn-primary:hover {
-  background-color: #563d;
-  border: 1px solid #FF8200;
-}
-
-.jumbotron {
-  background-image: url('../resources/backgrounds/neural_patterns2.gif');
-  background-attachment: scroll;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  will-change: transform;
-  min-height: 400px;
-  margin-top: 0px;
-  margin-bottom: 8px;
-  border-radius: 0; /*slim it down*/
-  height: 100%;
-  display: block;
-}
-
-/*how much padding for the different classes*/
-.padding {
-  padding-bottom: 2rem;
 }
 
 /*welcome stuff*/
@@ -516,13 +348,13 @@ button:focus {
   padding: 3rem;
 }
 .fa-linkedin {
-  color: #FF8200;
+  color: #0077b5;
 }
 .fa-github {
-  color: #FF8200;
+  color: #282c2c;
 }
 .fa-square-envelope {
-  color: #FF8200;
+  color: #7c92e4;
 }
 
 .fa-linkedin,
@@ -535,14 +367,14 @@ button:focus {
 .fa-linkedin:hover,
 .fa-github:hover,
 .fa-square-envelope:hover {
-  color: aqua;
+  color: #FF8200;
 }
 
 footer {
   background-color: #8484fc;
   color: #8484fc
-  padding-top: 2rem;
 }
+
 hr.light {
   border-top: 1px solid #8484fc;
   width: 75%;

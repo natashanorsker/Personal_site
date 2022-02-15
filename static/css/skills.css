@@ -1,5 +1,5 @@
 text {
-  font: 11px sans-serif;
+  font: 18px sans-serif;
   fill: grey;
 }
 
@@ -10,15 +10,15 @@ text:hover,
 }
 
 text:hover {
-  fill: black;
+  fill: #FFFF;
 }
 
 .node--source {
-  fill: green;
+  fill: #FF8200;
 }
 
 .node--target {
-  fill: red;
+  fill: #ff00d4;
 }
 
 path {
@@ -35,9 +35,9 @@ path {
 }
 
 .link--source {
-  stroke: red;
+  stroke: #ff00d4;
 }
 
 .link--target {
-  stroke: green;
+  stroke: #FF8200;
 }
