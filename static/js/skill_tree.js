@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<style>
-
-circle {
-  stroke-width: 1.5px;
-}
-
-line {
-  stroke: #999;
-  stroke-width: 1.5px;
-}
-
-</style>
-<body>
-<script src="//d3js.org/d3.v3.min.js"></script>
-<script>
-
 var width = 960,
     height = 500,
     radius = 6;
@@ -66,7 +48,6 @@ d3.json("graph.json", function(error, json) {
     node
         .attr("cx", function(d) { return d.x; })
         .attr("cy", function(d) { return d.y; });
-
+        
   }
 });
-</script>
