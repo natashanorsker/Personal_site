@@ -151,7 +151,7 @@ a:hover {
 }
 #jewellery_recommendation{
   background-image: url('../resources/backgrounds/jewellery2.png');
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 #courses{
   background-image: url('../resources/backgrounds/darkpurple9.png');
