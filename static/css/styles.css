@@ -127,12 +127,13 @@ a:hover {
 
 #skills {
   position: sticky;
-  background-image: url('../resources/backgrounds/neural_patterns2.gif');
-  background-attachment: scroll;
-  background-size: cover;
+  background-image: url('../resources/backgrounds/brain_img2.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
 }
 #projects {
-  background-image: url('../resources/backgrounds/neural_patterns3.gif');
+  background-image: url('../resources/backgrounds/gradient_img12.jpg');
   background-attachment: fixed;
   font-size: 50px;
   font-family: 'Rubik', sans-serif;
@@ -143,7 +144,7 @@ a:hover {
   position: relative;
 }
 #facial_recognition{
-  background-image: url('../resources/backgrounds/neural_patterns4.gif');
+  background-image: url('../resources/backgrounds/purple2.jfif');
   background-attachment: fixed;
   margin-top: 0px;
 }
@@ -255,9 +256,15 @@ a:hover {
 /*------------------------------------------*/
 
 
+#particles-js, #parallax, .layer, .some-space, .some-more-space {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
 
-
-
+#particles-js {
+  opacity: 0.6;
+}
 
 
 
